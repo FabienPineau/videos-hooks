@@ -6,8 +6,6 @@ const {REACT_APP_API_KEY} = process.env;
 const useVideos = ({defaultSearchTerm}) => {
   const [videos, setVideos] = useState([]);
 
-  console.log(REACT_APP_API_KEY)
-
   useEffect(() => {
     search(defaultSearchTerm);
   }, [defaultSearchTerm]);
